@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Lollypopia</div>
+        <ul class="nav-links">
+            <li><a href="Main Page.html" class="active">الرئيسية</a></li>
+            <li><a href="view all products.html">تسوق</a></li>
+            <li><a href="#">عروض خاصة</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+        </ul>
+        <div class="nav-icons">
+            <input type="text" class="search-bar" placeholder="ابحث عن حلوى مفضلة...">
+            <span style="font-size: 1.3rem; cursor: pointer;">🛒</span>
+        </div>
+    </nav>
+
+    <!-- البانر الرئيسي (Hero Section) -->
+    <header class="hero-banner">
+        <h1 class="hero-title">عالم من السعادة والحلويات</h1>
+        <button onclick="document.location='view all products.html'" class="hero-btn">تسوق الآن</button>
+    </header>
+
+    <main class="container">
+        <!-- قسم التصنيفات الدائرية (Categories) -->
+        <section class="categories-section">
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #f3e9dc;"><img src="caandy.jpg" alt="Candy"></div>
+                <p onclick="document.location='candy.html'">Candy</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #e6ccb2;"><img src="Cooco.jpg" alt="Chocolate"></div>
+                <p onclick="document.location='chocolate.html'">Chocolate</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #e2ecc8;"><img src="booba.jpg" alt="Drinks"></div>
+                <p onclick="document.location='Drinks.html'">Drinks</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #f1f5f8;"><img src="coffee.png" alt="Coffee"></div>
+                <p onclick="document.location='coffee.html'">Coffee</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #f1f5f8;"><img src="korean.png" alt="Korean"></div>
+                <p onclick="document.location='korean.html'">Korean</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #bde0fe;"><img src="snacks.jpg" alt="Snacks & Biscuits"></div>
+                <p onclick="document.location='snacks.html'">Snacks & Biscuits</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #f1f5f8;"><img src="Dried_Fruits.jpg" alt="Dried Fruits"></div>
+                <p onclick="document.location='Dried Fruits.html'">Dried Fruits</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #cdb4db;"><img src="offers.jpg" alt="Offers"></div>
+                <p onclick="document.location='offer.html'">Offers</p>
+            </div>
+            <div class="category-item">
+                <div class="circle-img" style="background-color: #ffcad4;"><img src="boxs.png" alt="Boxes"></div>
+                <p onclick="document.location='boxes.html'">Boxes</p>
+            </div>
+        </section>
+    </main>
+
+    <main class="container">
+        <!-- قسم سلايدر المنتجات -->
+        <section class="slider-section">
+            <div class="sales-header">
+                <h2> Mega-Flash Sale | UP TO 50% OFF </h2>
+                <a href="view all products.html" class="view-all">View all products</a>
+            </div>
+
+            <div class="products-grid">
+                <!-- الكارت الأول -->
+                <div class="product-card">
+                    <span class="discount-badge">-11%</span>
+                    <div class="product-img">
+                    <img src="SwissFRU1.jpg" alt="Lavazza Qualita ORO">
+                    </div>
+                    <div class="product-info">
+                        <span class="brand-name">SwissFru</span>
+                        <div class="price-container">
+                            <span class="current-price">EGP 159.99</span>
+                            <span class="old-price">EGP 179.99</span>
+                        </div>
+                        <h3 class="product-title">Lavazza Qualita ORO Ground Coffee 250g + Silver Moka Pot - 3 Cups</h3>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- الكارت الثاني -->
+                <div class="product-card">
+                    <span class="discount-badge">-15%</span>
+                    <div class="product-img">
+                    <img src="Natchito1.jpg" alt="Silver Moka Pot Bundle">
+                    </div>
+                    <div class="product-info">
+                        <span class="brand-name">Natchito</span>
+                        <div class="price-container">
+                            <span class="current-price">EGP 64.99</span>
+                            <span class="old-price">EGP 74.99</span>
+                        </div>
+                        <h3 class="product-title">Silver Moka Pot - 3 Cups + Lavazza IL Mattino Ground Coffee 250g Bundle</h3>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- الكارت الثالث -->
+                <div class="product-card">
+                    <span class="discount-badge">-40%</span>
+                    <div class="product-img">
+                    <img src="Boba2.jpg" alt="Walkers Toffees">
+                    </div>
+                    <div class="product-info">
+                        <span class="brand-name">Boba</span>
+                        <div class="price-container">
+                            <span class="current-price">EGP 74.99</span>
+                            <span class="old-price">EGP 99.99</span>
+                        </div>
+                        <h3 class="product-title">5 * Walkers Liquorice Toffees 150g - 750g</h3>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- الكارت الرابع -->
+                <div class="product-card">
+                    <span class="discount-badge">-11%</span>
+                    <div class="product-img">
+                    <img src="Wafer Rolls2.jpg" alt="Lavazza Oro 1Kg">
+                    </div>
+                    <div class="product-info">
+                        <span class="brand-name">Wafer Rolls</span>
+                        <div class="price-container">
+                            <span class="current-price">EGP 34.99</span>
+                            <span class="old-price">EGP 49.99 </span>
+                        </div>
+                        <h3 class="product-title">4 * Lavazza Qualita ORO Ground Coffee 250g - 1 Kg</h3>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="container">
+
+        <!-- قسم العروض والخصومات (Flash Deals) -->
+        <section class="sales-section">
+            <div class="sales-header">
+                <h2> BestSeller | UP TO 50% OFF </h2>
+                <a href="view all products.html" class="view-all">View all products</a>
+            </div>
+
+            <div class="products-grid"> 
+                <!-- المنتج الأول -->
+                <div class="product-card">
+                    <span class="discount-badge">-29%</span>
+                    <div class="product-img">
+                        <img src="SwissFRU6.jpg" alt="Lavazza">
+                    </div>
+                    <div class="product-info">
+                        <h3>SwissFRU</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 159.99</span>
+                            <span class="old-price">EGP 179.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- المنتج الثاني -->
+                <div class="product-card">
+                    <span class="discount-badge">-40%</span>
+                    <div class="product-img">
+                        <img src="mini twist marshmallow.jpg" alt="San Pellegrino">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mini Twist Marshmallow</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 49.99</span>
+                            <span class="old-price">EGP 59.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- المنتج الثالث -->
+                <div class="product-card">
+                    <span class="discount-badge">-35%</span>
+                    <div class="product-img">
+                        <img src="topokki2.jpg" alt="Torani">
+                    </div>
+                    <div class="product-info">
+                        <h3>Topokki</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 184.99</span>
+                            <span class="old-price">EGP 199.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- المنتج الرابع -->
+                <div class="product-card">
+                    <span class="discount-badge">-50%</span>
+                    <div class="product-img">
+                        <img src="T-Rolls2.jpg" alt="AeroPress">
+                    </div>
+                    <div class="product-info">
+                        <h3>T-Rolls</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 14.99</span>
+                            <span class="old-price">EGP 16.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="sales-section">
+            <div class="products-grid"> 
+                <!-- المنتج الخامس -->
+                <div class="product-card">
+                    <span class="discount-badge">-29%</span>
+                    <div class="product-img">
+                    <img src="samyang sauce.jpg" alt="Lavazza">
+                    </div>
+                    <div class="product-info">
+                        <h3>Samyang Sauce</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 249.99</span>
+                            <span class="old-price">EGP 274.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- المنتج السادس -->
+                <div class="product-card">
+                    <span class="discount-badge">-40%</span>
+                    <div class="product-img">
+                    <img src="mega-chips3.jpg" alt="San Pellegrino">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mega-Chips</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 39.99</span>
+                            <span class="old-price">EGP 44.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- المنتج السابع -->
+                <div class="product-card">
+                    <span class="discount-badge">-35%</span>
+                    <div class="product-img">
+                        <img src="Mogu-Mogu22.jpg" alt="Torani">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mogu-Mogu</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 64.99</span>
+                            <span class="old-price">EGP 69.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+
+                <!-- المنتج الثامن -->
+                <div class="product-card">
+                    <span class="discount-badge">-50%</span>
+                    <div class="product-img">
+                    <img src="Boba3.jpg" alt="AeroPress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Boba</h3>
+                        <div class="price-container">
+                            <span class="current-price">EGP 74.99</span>
+                            <span class="old-price">EGP 99.99</span>
+                        </div>
+                    </div>
+                    <button class="buy-now-btn">Buy now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="features-container">
+        <div class="feature-item">
+            <img src="path-to-your-icon1.jpg" alt="Secure Payment">
+            <h3>SECURE DIGITAL PAYMENT</h3>
+            <p>Industry-leading encryption for all transactions</p>
+        </div>
+
+        <div class="feature-item">
+            <img src="path-to-your-icon2.jpg" alt="Egypt-Wide Delivery">
+            <h3>EGYPT-WIDE RELIABLE DELIVERY</h3>
+            <p>Fast and safe shipping across all governorates</p>
+        </div>
+
+        <div class="feature-item">
+            <img src="path-to-your-icon3.jpg" alt="Certified Product">
+            <h3>CERTIFIED PRODUCT</h3>
+            <p>only the best products for you</p>
+        </div>
+
+        <div class="feature-item">
+            <img src="path-to-your-icon4.jpg" alt="Wide Selection">
+            <h3>WIDE SELECTION</h3>
+            <p>WIDE SELECTION OF +100 PRODUCTS</p>
+        </div>
+    </div>
+
+    <!-- الأزرار العائمة (الواتساب والصعود لأعلى) -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/+201023288315/" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="footer">
+            Copyright &copy; 2026 All rights reserved. Powered by LollyPopia Team
+    </div>
+</body>
+</html>
